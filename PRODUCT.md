@@ -27,16 +27,19 @@
 - No ads
 
 # Personalisation — Guided Quiz
-- 7 questions, one per screen on mobile, progress bar, back/forward navigation, session state saved
-- Q1: Full address or suburb/postcode (first question, two modes — see Search Modes below)
-- Q2: Child's current year level and target school start year
-- Q3: School type preference — government / Catholic / independent / no preference
-- Q4: Is selective entry being considered? yes / no / not sure
-- Q5: What matters most — rank by priority: academics, wellbeing, sport, arts, inclusion
-- Q6: Approximate annual fee budget (if private/independent selected): under $10k / $10-20k / $20k+
-- Q7: Any specific needs — learning support, language program, faith-based, other
+- 9 screens, one per screen on mobile, progress bar, back/forward navigation, session state saved
+- Screen 1: Full address entry with inline privacy note ("Used only to check zone eligibility — not stored or shared"), suburb/postcode alternative available
+- Screen 2: Children entry — year level and target start year per child. Dynamic pricing pill updates live as children are added: 1 child $29 / 2 children $39 / 3+ children $49 (shown as "Family Report")
+- Screen 3: School type preference — government / Catholic / independent / no preference
+- Screen 4: Selective entry consideration — yes / not sure / no, with inline tooltip explaining selective entry
+- Screen 5a: Top level priorities — tap to select from: academics, wellbeing, culture, enrichment, support. Auto-ranks in order tapped
+- Screen 5b: Dynamic follow-up based on top priority selected in 5a. Academics branch: learning environment (explicit vs inquiry-based), senior pathway (VCE / VM / IB / not sure — secondary only), class size preference
+- Screen 6: Enrichment and language — language toggle (reveals dropdown of 19+ Victorian curriculum languages when on), enrichment chips (performing arts, STEM, elite sport, music, visual arts, humanities)
+- Screen 7: Fee budget per child per year — under $10k / $10-20k / $20k+ / prefer not to say — skippable
+- Screen 8: Co-ed vs single-sex, school size (small community / large), school values (traditional / progressive / no preference) — skippable
+- Screen 9: Specific needs (learning support, gifted and talented, disability support, EAL, allied health on site, none) + open text field "Anything else important to you?" — skippable. CTA reads "See my matches"
 - Plain English throughout, inline tooltips explaining NAPLAN, VCE, ATAR, selective entry, ACER, Edutest
-- Two quiz modes: full quiz (7 questions, full address) and quick quiz (3 questions, suburb/postcode)
+- Two quiz modes: full quiz (9 screens, full address) and quick quiz (3 screens, suburb/postcode)
 
 # Search Modes
 - Two distinct modes decided:

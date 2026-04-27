@@ -36,15 +36,27 @@
 
 # Quiz Flow Design Decisions
 - Entry point: "Find my school" CTA launches quiz
-- First screen of quiz presents two mode options:
-  - Precise mode: "Enter your full address" with Google Places autocomplete, privacy note inline "Used only to check zone eligibility — not stored or shared"
-  - Broad mode: "Search by suburb or postcode" for relocating, exploring, or privacy-conscious parents
-- Precise mode: 7-question full quiz, street-level zone matching, accurate results
-- Broad mode: 3-question quick quiz (primary or secondary, school type preference, one priority), shows all school types in area, zone results marked approximate, prompt at end to enter address for accurate zone checking
-- Progress bar always visible
+- Full quiz: 9 screens, all approved — see screen-by-screen decisions below
+- Quick quiz: 3 screens, broad/suburb mode — to be wireframed
+- Progress bar fills incrementally across all 9 steps, always visible
 - Back button always visible
+- Skip options on screens 7, 8, 9 shown top right in nav bar in green
 - One question per screen on mobile
 - Inline tooltips on education terms: NAPLAN, VCE, ATAR, selective entry, ACER, Edutest
+- Final CTA on screen 9 reads "See my matches" (not "Continue")
+
+## Full Quiz — Screen-by-Screen Design
+
+- **Screen 1 — Address:** Google Places autocomplete, inline privacy note "Used only to check zone eligibility — not stored or shared", suburb/postcode alternative available. Broad mode leads to 3-screen quick quiz; zone results marked approximate
+- **Screen 2 — Children:** Year level and target start year per child. Dynamic pricing pill updates live as children are added (green background #E1F5EE, text #085041): 1 child $29 / 2 children $39 / 3+ children $49 (labelled "Family Report")
+- **Screen 3 — School type:** government / Catholic / independent / no preference
+- **Screen 4 — Selective entry:** yes / not sure / no, with inline tooltip explaining selective entry
+- **Screen 5a — Priorities:** Tap to select from academics, wellbeing, culture, enrichment, support. Auto-assigns rank number as parent taps in order; no drag required unless reordering
+- **Screen 5b — Priority follow-up:** Completely different content depending on top priority from 5a. Academics branch: learning environment (explicit vs inquiry-based), senior pathway (VCE / VM / IB / not sure — secondary only), class size preference
+- **Screen 6 — Enrichment and language:** Language toggle — off hides dropdown, on reveals selector with 19+ Victorian curriculum languages. Enrichment chips: performing arts, STEM, elite sport, music, visual arts, humanities
+- **Screen 7 — Fee budget:** Per child per year — under $10k / $10-20k / $20k+ / prefer not to say. Skippable (skip top right, green)
+- **Screen 8 — School character:** Co-ed vs single-sex, school size (small community / large), school values (traditional / progressive / no preference) grouped on one screen. Skippable
+- **Screen 9 — Specific needs:** Chips: learning support, gifted and talented, disability support, EAL, allied health on site, none. Open text field placeholder "e.g. close to public transport, specific suburb…". Skippable. CTA: "See my matches"
 
 # Results Page Design Decisions
 - Each school card shows: school name, type badge, match score (percentage + one-line reason), zone status badge (government only), key stat (NAPLAN percentile or VCE median), distance, fee range (private only)
@@ -74,7 +86,7 @@
 - 7-day money back guarantee shown on checkout page
 
 # Screens Still to Wireframe
-- Quiz flow (7-screen full + 3-screen quick)
+- Quick quiz (3-screen, broad/suburb mode)
 - Results page
 - School detail page (3 variants)
 - Compare mode
