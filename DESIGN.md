@@ -63,11 +63,40 @@
 - **Screen 9 — Specific needs:** Chips: learning support, gifted and talented, disability support, EAL, allied health on site, none. Open text field placeholder "e.g. close to public transport, specific suburb…". Skippable. CTA: "See my matches"
 
 # Results Page Design Decisions
-- Each school card shows: school name, type badge, match score (percentage + one-line reason), zone status badge (government only), key stat (NAPLAN percentile or VCE median), distance, fee range (private only)
-- Free tier: top 3 cards fully visible
-- Paywall: blurred cards below top 3, overlay with "X more schools match your profile", "Get full report — $29" button, 7-day money back guarantee
-- Sort and filter bar: filter by school type, distance radius, fee range. Sort by match score, ranking, distance, fees
-- Out-of-zone card: amber badge, expandable inline section explaining options, private/independent alternatives surfaced automatically, link to findmyschool.vic.gov.au
+
+## Layout and Navigation
+- Default view: list view, map toggle at top of page
+- Nav bar: logo left, "Edit quiz" link right (allows parents to adjust answers without restarting)
+- Results header: summary of quiz inputs (suburb, number of children, school types selected)
+- Filter chips: All types / Government / Independent / Selective / Catholic
+- Sort: default by match score, tappable to change
+
+## School Cards — Free Tier
+- Labelled "Your top 3 matches — free" above first card
+- Cards vary by school type:
+  - Government: school name, match score, government badge, zone status badge (in zone green / out of zone amber), NAPLAN percentile, distance, one-line match reason
+  - Independent/private: school name, match score, independent badge, waitlist badge if applicable, VCE median, fee per year, one-line match reason
+  - Selective entry: school name, match score, selective entry badge, no zone required badge, VCE median, distance, one-line match reason
+
+## Paywall
+- Appears after top 3 cards on scroll
+- Blurred card behind overlay
+- Overlay shows number of additional matches
+- "Get full report" CTA button
+- All three pricing options visible: $29 one child / $39 two children / $49 three or more
+- 7-day money back guarantee shown
+
+## Out of Zone Alert
+- Amber bordered component below paywall
+- Shows which school is out of zone
+- Explains circumstances where out-of-zone applications may be considered
+- Links to findmyschool.vic.gov.au
+
+## Map View
+- Mapbox map with colour-coded pins by school type: selective coral / government blue / independent purple / home address green
+- Tap pin shows school card below map
+- Free top 3 only visible on map without payment
+- Map tap interaction: to be validated with real device testing before build
 
 # School Detail Page Design Decisions
 - 3 variants by school type

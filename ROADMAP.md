@@ -43,8 +43,9 @@
 - [x] Landing page wireframed (v2) — see DESIGN.md
 - [x] Wireframe full quiz flow — 9 screens, mobile-first, all screens approved
 - [x] Quick quiz wireframe — decision made to use single 9-screen quiz flow with two entry modes on screen 1 instead of a separate short quiz
-- [ ] Wireframe results page — school cards, zone badges, match score, paywall blur
+- [x] Wireframe results page — finalised, see DESIGN.md
 - [ ] Wireframe school detail pages — 3 variants (government / private / selective)
+- [ ] NOTE: map view tap interaction needs real device testing before build
 - [ ] Wireframe compare mode
 - [ ] Wireframe report purchase + delivery confirmation
 - [ ] Test quiz flow with 2-3 real parents before building
