@@ -36,7 +36,7 @@
 - [ ] ABN: must be active before Stripe can go live — BLOCKER (can build and test in sandbox without ABN)
 - [ ] Set up Supabase account when Stage 5 Phase 1 begins
 
-# Stage 4 — UX Design and Wireframes — IN PROGRESS
+# Stage 4 — UX Design and Wireframes — COMPLETE
 - [x] User journey fully mapped
 - [x] Paywall placement decided — after top 3 results
 - [x] School type branching designed
@@ -45,12 +45,12 @@
 - [x] Quick quiz wireframe — decision made to use single 9-screen quiz flow with two entry modes on screen 1 instead of a separate short quiz
 - [x] Wireframe results page — finalised, see DESIGN.md
 - [x] Wireframe school detail pages — all 3 variants finalised (government / private / selective), see DESIGN.md
+- [x] Wireframe compare mode — finalised, see DESIGN.md
+- [x] Wireframe report purchase + delivery confirmation — finalised, see DESIGN.md
 - [ ] NOTE: map view tap interaction needs real device testing before build
-- [ ] Wireframe compare mode
-- [ ] Wireframe report purchase + delivery confirmation
 - [ ] Test quiz flow with 2-3 real parents before building
 
-# Stage 5 — V1 Build — NOT STARTED
+# Stage 5 — V1 Build — IN PROGRESS
 - GitHub repo created: https://github.com/ivannaliz/vic-school-finder
 - Local path: ~/Peronal Apps/vic-school-finder
 - [ ] Phase 1: data layer — Supabase setup, school data import, postcode/suburb lookup

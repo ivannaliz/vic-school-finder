@@ -130,22 +130,39 @@
 - Other selective schools chips at bottom: MacRobertson Girls, Nossal High, Suzanne Cory, John Monash Science
 - Trend bar colour: coral (#D85A30)
 
-# Compare Mode Design Decisions
+# Compare Mode Design Decisions — Finalised
 - Up to 3 schools side by side
-- Parent selects which dimensions to compare
-- Dimensions: academics, fees, distance, extracurriculars, application complexity, wellbeing
-- Free: compare on 2 dimensions
-- Paid: all dimensions, included in report purchase
+- School headers: school type badge, school name, remove button per column
+- Dimension tabs: Academics / Fees / Distance / Programs / Wellbeing / Application — tap to switch
+- Contextual summary banner below tabs — plain English insight reading the data (e.g. "Melbourne High scores higher academically — but Hawthorn is in your zone and free to attend")
+- Free rows: match score (bar chart), VCE median, NAPLAN reading, 3yr trend, zone status, annual fees, entry type — winning value highlighted green per row
+- Locked rows: Extracurriculars, Wellbeing, Class size, Teaching approach — each shows "Unlock to see" green tag in both columns
+- Note below locked rows: "Locked rows included in full report"
+- "+ Add a third school to compare" dashed button below rows
+- Sticky CTA: "Unlock full comparison + report" button, pricing summary below
+
+# Report Purchase Screen — Finalised
+- Nav: back arrow to results left, "Get your report" title centre
+- Report preview card: lists all 6 included items (full matched list, application checklist, trend data, full compare mode, next steps action plan, plain English glossary)
+- Plan selector: 3 options (1 child $29 / 2 children $39 / 3+ children $49) — pre-selected based on number of children entered in quiz
+- 7-day money back guarantee shown prominently with explanation
+- Email field: "your report will be emailed here as a PDF — no account required"
+- Payment methods: Card / Apple Pay / Google Pay tabs
+- Card fields: card number, MM/YY, CVC, name on card
+- Pay button: "Pay $[amount] — get my report" — amount reflects selected plan
+- Stripe security note below button: "Secured by Stripe · Your payment details are never stored"
+
+# Delivery Confirmation Screen — Finalised
+- No back navigation — clean success state
+- Success hero: green circle icon, "Your report is ready" title, sub text confirming email sent
+- Download card (primary — green border): "Download PDF now" with download link
+- Email card (secondary): confirms PDF sent to email address provided
+- Next steps section: 4 numbered action items (read report and shortlist, book school tours, check application deadlines, verify zone at findmyschool.vic.gov.au)
+- "Back to your school results" button at bottom
 
 # Report Design Decisions
 - Format: PDF generated server-side using React PDF
 - Delivery: instant download on confirmation page + emailed via Resend
 - Contents: full matched school list ranked with match score breakdown, per-school key data and zone status or application requirements, trend direction, side-by-side comparison of shortlist, application checklist per school type, "your next steps" personalised action plan with dates, plain-English glossary (NAPLAN, VCE, ATAR, SEAL, ACER, Edutest)
-- Price: $25-35 one-time
+- Price: $29 / $39 / $49 (one / two / three or more children)
 - 7-day money back guarantee shown on checkout page
-
-# Screens Still to Wireframe
-- Results page
-- School detail page (3 variants)
-- Compare mode
-- Report purchase and delivery confirmation

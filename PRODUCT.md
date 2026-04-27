@@ -71,8 +71,15 @@
   - Government: zone eligibility (in zone / out of zone / borderline — one state shown), NAPLAN percentiles, VCE median, year-on-year trend bars, socioeconomic context note, school profile
   - Private/independent: application and waitlist section at top (most urgent info), urgency banner, application timeline with timing badges, required documents, itemised fees, VCE/NAPLAN performance, school profile
   - Selective entry: key fact banner (no zone, no fees), SEAL exam detail (components, scoring, no interview), application timeline, exam preparation section, VCAA practice materials link. Tutoring directory is a V2 lead gen feature — placeholder shown in V1. Other selective schools chips at bottom
-- Phase 5 — Compare and decide: compare mode up to 3 schools, free on 2 dimensions, paid on all dimensions
-- Phase 6 — Purchase and delivery: Stripe checkout, instant PDF download, PDF emailed
+- Phase 5 — Compare and decide:
+  - Up to 3 schools side by side, dimension tabs (Academics / Fees / Distance / Programs / Wellbeing / Application)
+  - Contextual summary banner — plain English insight reading the comparison data
+  - Free rows: match score, VCE median, NAPLAN, trend, zone status, fees, entry type — winning value highlighted green
+  - Locked rows: Extracurriculars, Wellbeing, Class size, Teaching approach — shown with "Unlock to see" label
+  - "+ Add a third school to compare" dashed button, sticky "Unlock full comparison + report" CTA
+- Phase 6 — Purchase and delivery:
+  - Purchase screen: report preview card (6 items listed), plan pre-selected from quiz (1 child $29 / 2 children $39 / 3+ $49), 7-day guarantee, email field (no account required), Card / Apple Pay / Google Pay, pay button shows amount, Stripe security note
+  - Delivery confirmation: clean success state (no back nav), download card (primary green), email confirmation card, 4-item next steps action plan, "Back to your school results" button
 
 # Out-of-Zone Handling
 - Amber "Out of zone" badge on government school cards
