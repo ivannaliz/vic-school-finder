@@ -99,10 +99,36 @@
 - Map tap interaction: to be validated with real device testing before build
 
 # School Detail Page Design Decisions
-- 3 variants by school type
-- Government variant: zone check (in zone green / out of zone amber / borderline warning), NAPLAN percentile, VCE median, year-on-year trend chart, performance relative to socioeconomic context, enrolment size, specialist programs, extracurriculars, Google rating, link to school website
-- Private/independent variant: annual tuition fee range, compulsory levies, scholarship info, application timeline, waitlist system explanation, entrance exam details (ACER or Edutest), interview process, required documents, VCE or IB results, NAPLAN percentile, university pathway rates, year-on-year trend
-- Selective entry variant: exam type (SEAL test), test date window, exam content breakdown, no zone requirement note, key selective schools listed (Melbourne High, MacRobertson Girls, Nossal, Suzanne Cory, John Monash), prep resources, link to VCAA official materials
+
+## Shared Elements (all variants)
+- Nav bar: back arrow to results left, "+ Add to compare" right
+- Hero section: school type badge, school name, meta info (suburb, year levels, co-ed/single-sex, enrolment), match score pill + one-line match reason
+- Action buttons row: "Book school tour" (primary green), "School website", "Share"
+- Sticky CTA at bottom: "Get full report — unlock all schools" button, pricing summary "$29 one child · $39 two children · $49 three or more · 7-day guarantee"
+- "+ Add to compare" button above sticky CTA
+
+## Government Variant
+- Zone eligibility section: in zone (green card), out of zone (amber card), borderline (grey card) — only relevant state shown in real product. Each state includes: status label, explanation text, link to findmyschool.vic.gov.au
+- Academic performance section: NAPLAN reading percentile, NAPLAN numeracy percentile, VCE median score, percentage scoring above 40. Year-on-year trend bars (3 years) with actual values. "What does this mean?" plain English box. Socioeconomic context note in purple — "raw rankings don't tell the full story"
+- School profile section: year levels, enrolment, school size, co-ed/single-sex, teaching approach, senior pathway, languages offered, program chips, Google rating and review count
+- Trend bar colour: green (#1D9E75)
+
+## Private / Independent Variant
+- Application and waitlist section at top: urgency banner "Apply early — high demand school", application timeline with timing badges (register on waitlist, application + documents, interview, offer and acceptance). Required documents list (birth certificate, school reports, immunisation, passport/visa, cognitive assessment if applicable)
+- Fees and costs section: itemised breakdown (tuition, building levy, technology levy, camps, uniform), estimated first-year total, scholarship and bursary note
+- Academic performance section: VCE median, percentage above 40, NAPLAN percentile, university pathways percentage. Year-on-year trend bars. Plain English explanation
+- School profile section: year levels, enrolment, school size, co-ed/single-sex, faith (if applicable), teaching approach, senior pathway (VCE / IB), languages offered, program chips, Google rating
+- Trend bar colour: purple (#7F77DD)
+
+## Selective Entry Variant
+- Key fact banner at top: "Open to all Victorian boys/girls — no zone, no fees" (or equivalent per school)
+- Entrance exam section: exam type (SEAL test / VCAA), entry year (Year 9 only), applications open (~June), exam date (~August). Components: verbal reasoning, numerical reasoning, reading comprehension, mathematics. "How selection works" plain English box — no interview, no portfolio, score-based only
+- Application timeline section: register (June Year 8), sit exam (August Year 8), offers released (November Year 8), start Year 9 (February)
+- Exam preparation section: VCAA official practice materials link, recommended prep timeline (6–12 months), tutoring centres note (V2 feature — lead gen opportunity, placeholder shown in V1)
+- Academic performance section: VCE median, percentage above 40, NAPLAN percentile, university pathways. Year-on-year trend bars. Plain English note: high scores reflect selective cohort not just teaching quality
+- School profile section: year levels, enrolment, co-ed/single-sex, fees (free — government), senior pathway, languages, program chips, Google rating
+- Other selective schools chips at bottom: MacRobertson Girls, Nossal High, Suzanne Cory, John Monash Science
+- Trend bar colour: coral (#D85A30)
 
 # Compare Mode Design Decisions
 - Up to 3 schools side by side

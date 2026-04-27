@@ -44,7 +44,7 @@
 - [x] Wireframe full quiz flow — 9 screens, mobile-first, all screens approved
 - [x] Quick quiz wireframe — decision made to use single 9-screen quiz flow with two entry modes on screen 1 instead of a separate short quiz
 - [x] Wireframe results page — finalised, see DESIGN.md
-- [ ] Wireframe school detail pages — 3 variants (government / private / selective)
+- [x] Wireframe school detail pages — all 3 variants finalised (government / private / selective), see DESIGN.md
 - [ ] NOTE: map view tap interaction needs real device testing before build
 - [ ] Wireframe compare mode
 - [ ] Wireframe report purchase + delivery confirmation

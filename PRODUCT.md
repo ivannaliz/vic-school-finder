@@ -66,7 +66,11 @@
   - Paywall appears after top 3 cards on scroll — blurred card behind overlay, number of additional matches shown, "Get full report" CTA, all three pricing options visible ($29 one child / $39 two children / $49 three or more), 7-day money back guarantee
   - Out of zone alert: amber bordered component below paywall, explains circumstances, links to findmyschool.vic.gov.au
   - Map view: Mapbox, colour-coded pins by school type (selective coral / government blue / independent purple / home address green), tap pin shows school card below map, free top 3 only visible without payment, tap interaction to be validated with real device testing
-- Phase 4 — School detail pages: 3 variants — government (zone check, NAPLAN, VCE, profile), private/independent (fees, application process, academic data), selective entry (exam info, key schools, prep resources)
+- Phase 4 — School detail pages: 3 variants, all finalised
+  - Shared: nav (back to results, + Add to compare), hero (school type badge, name, meta, match score), action buttons ("Book school tour" primary — parents are in research phase not ready to enrol, "School website", "Share"), sticky CTA with full pricing summary always visible while scrolling
+  - Government: zone eligibility (in zone / out of zone / borderline — one state shown), NAPLAN percentiles, VCE median, year-on-year trend bars, socioeconomic context note, school profile
+  - Private/independent: application and waitlist section at top (most urgent info), urgency banner, application timeline with timing badges, required documents, itemised fees, VCE/NAPLAN performance, school profile
+  - Selective entry: key fact banner (no zone, no fees), SEAL exam detail (components, scoring, no interview), application timeline, exam preparation section, VCAA practice materials link. Tutoring directory is a V2 lead gen feature — placeholder shown in V1. Other selective schools chips at bottom
 - Phase 5 — Compare and decide: compare mode up to 3 schools, free on 2 dimensions, paid on all dimensions
 - Phase 6 — Purchase and delivery: Stripe checkout, instant PDF download, PDF emailed
 
