@@ -52,7 +52,20 @@
 # User Journey — 6 Phases
 - Phase 1 — Discovery: landing page with hero CTA, trust signals, sample school card
 - Phase 2 — Personalisation quiz: 9 screens, single flow, two entry modes on screen 1 (precise address or broad suburb/postcode)
-- Phase 3 — Free results: top 3 matches with match score, zone badge, key stats, out-of-zone handling
+- Phase 3 — Free results:
+  - Two views: list view (default) and map view (toggle)
+  - Nav bar shows "Edit quiz" link so parents can adjust answers without restarting
+  - Results header summarises quiz inputs: suburb or address, number of children, school types selected
+  - Filter chips: All types / Government / Independent / Selective / Catholic
+  - Sort: default by match score, tappable to change
+  - Free tier shows top 3 matches labelled "Your top 3 matches — free"
+  - Card content varies by school type:
+    - Government: match score, zone status badge (in zone green / out of zone amber), NAPLAN percentile, distance, one-line match reason
+    - Independent/private: match score, waitlist badge if applicable, VCE median, fee per year, one-line match reason
+    - Selective entry: match score, no zone required badge, VCE median, distance, one-line match reason
+  - Paywall appears after top 3 cards on scroll — blurred card behind overlay, number of additional matches shown, "Get full report" CTA, all three pricing options visible ($29 one child / $39 two children / $49 three or more), 7-day money back guarantee
+  - Out of zone alert: amber bordered component below paywall, explains circumstances, links to findmyschool.vic.gov.au
+  - Map view: Mapbox, colour-coded pins by school type (selective coral / government blue / independent purple / home address green), tap pin shows school card below map, free top 3 only visible without payment, tap interaction to be validated with real device testing
 - Phase 4 — School detail pages: 3 variants — government (zone check, NAPLAN, VCE, profile), private/independent (fees, application process, academic data), selective entry (exam info, key schools, prep resources)
 - Phase 5 — Compare and decide: compare mode up to 3 schools, free on 2 dimensions, paid on all dimensions
 - Phase 6 — Purchase and delivery: Stripe checkout, instant PDF download, PDF emailed
