@@ -42,9 +42,9 @@
 - [x] School type branching designed
 - [x] Landing page wireframed (v2) — see DESIGN.md
 - [x] Wireframe full quiz flow — 9 screens, mobile-first, all screens approved
-- [ ] Wireframe quick quiz — 3 screens, broad/suburb mode
+- [x] Quick quiz wireframe — decision made to use single 9-screen quiz flow with two entry modes on screen 1 instead of a separate short quiz
 - [ ] Wireframe results page — school cards, zone badges, match score, paywall blur
-- [ ] Wireframe school detail page — 3 versions (government / private / selective)
+- [ ] Wireframe school detail pages — 3 variants (government / private / selective)
 - [ ] Wireframe compare mode
 - [ ] Wireframe report purchase + delivery confirmation
 - [ ] Test quiz flow with 2-3 real parents before building
@@ -53,7 +53,7 @@
 - GitHub repo created: https://github.com/ivannaliz/vic-school-finder
 - Local path: ~/Peronal Apps/vic-school-finder
 - [ ] Phase 1: data layer — Supabase setup, school data import, postcode/suburb lookup
-- [ ] Phase 2: quiz — mobile-first UI, 9-screen full quiz + 3-screen quick quiz, match score algorithm
+- [ ] Phase 2: quiz — mobile-first UI, 9-screen single flow with two entry modes (precise address / broad suburb), match score algorithm
 - [ ] Phase 3: results page — school cards, zone badges, sort/filter, paywall blur
 - [ ] Phase 4: school detail pages — 3 variants by school type
 - [ ] Phase 5: compare mode

@@ -27,8 +27,11 @@
 - No ads
 
 # Personalisation — Guided Quiz
-- 9 screens, one per screen on mobile, progress bar, back/forward navigation, session state saved
-- Screen 1: Full address entry with inline privacy note ("Used only to check zone eligibility — not stored or shared"), suburb/postcode alternative available
+- One quiz flow, 9 screens, one per screen on mobile, progress bar, back/forward navigation, session state saved
+- Two entry modes on Screen 1 only — all remaining screens (2–9) are identical regardless of mode:
+  - Precise mode: parent enters full address, Google Places autocomplete, inline privacy note "Used only to check zone eligibility — not stored or shared", street-level zone matching, confirmed zone results
+  - Broad mode: parent enters suburb or postcode, amber warning note shown, zone results marked as approximate throughout, secondary option to switch to full address always visible
+- Screen 1: Address entry — precise mode (full address) or broad mode (suburb/postcode). See entry mode details above
 - Screen 2: Children entry — year level and target start year per child. Dynamic pricing pill updates live as children are added: 1 child $29 / 2 children $39 / 3+ children $49 (shown as "Family Report")
 - Screen 3: School type preference — government / Catholic / independent / no preference
 - Screen 4: Selective entry consideration — yes / not sure / no, with inline tooltip explaining selective entry
@@ -39,17 +42,16 @@
 - Screen 8: Co-ed vs single-sex, school size (small community / large), school values (traditional / progressive / no preference) — skippable
 - Screen 9: Specific needs (learning support, gifted and talented, disability support, EAL, allied health on site, none) + open text field "Anything else important to you?" — skippable. CTA reads "See my matches"
 - Plain English throughout, inline tooltips explaining NAPLAN, VCE, ATAR, selective entry, ACER, Edutest
-- Two quiz modes: full quiz (9 screens, full address) and quick quiz (3 screens, suburb/postcode)
 
-# Search Modes
-- Two distinct modes decided:
-- Precise mode (full address): street-level zone matching for government schools, tailored to exact eligibility, 7-question full quiz, accurate zone results. Address input uses Google Places autocomplete. Inline privacy note: "Used only to check zone eligibility — not stored or shared"
-- Broad mode (suburb/postcode): for parents relocating, exploring, or privacy-conscious. Shows all school types available in that area, zone results marked as approximate, 3-question quick quiz (primary or secondary, school type preference, one priority). Prompt at end of results: "For accurate zone checking, enter your address"
-- Entry point: both modes accessed from the same "Find my school" CTA on landing page — choice presented as first step of quiz
+# Entry Modes
+- One quiz, two ways to start — choice made on Screen 1:
+- Precise mode (full address): street-level zone matching, confirmed zone status on results, Google Places autocomplete, inline privacy note shown
+- Broad mode (suburb/postcode): for parents relocating, exploring, or privacy-conscious. Zone results marked as approximate throughout with amber visual treatment. Prompt always visible to switch to full address for precise zone checking. Results page shows approximate zone badge with link to verify via findmyschool.vic.gov.au
+- Entry point: "Find my school" CTA on landing page — entry mode choice is Screen 1 of the quiz
 
 # User Journey — 6 Phases
 - Phase 1 — Discovery: landing page with hero CTA, trust signals, sample school card
-- Phase 2 — Personalisation quiz: 7 questions (precise) or 3 questions (broad)
+- Phase 2 — Personalisation quiz: 9 screens, single flow, two entry modes on screen 1 (precise address or broad suburb/postcode)
 - Phase 3 — Free results: top 3 matches with match score, zone badge, key stats, out-of-zone handling
 - Phase 4 — School detail pages: 3 variants — government (zone check, NAPLAN, VCE, profile), private/independent (fees, application process, academic data), selective entry (exam info, key schools, prep resources)
 - Phase 5 — Compare and decide: compare mode up to 3 schools, free on 2 dimensions, paid on all dimensions

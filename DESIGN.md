@@ -35,9 +35,8 @@
 - "Browse top schools instead" secondary CTA: REMOVED
 
 # Quiz Flow Design Decisions
-- Entry point: "Find my school" CTA launches quiz
-- Full quiz: 9 screens, all approved — see screen-by-screen decisions below
-- Quick quiz: 3 screens, broad/suburb mode — to be wireframed
+- One quiz flow, 9 screens — no separate quick quiz
+- Two entry modes on Screen 1 only; Screens 2–9 are identical for both modes
 - Progress bar fills incrementally across all 9 steps, always visible
 - Back button always visible
 - Skip options on screens 7, 8, 9 shown top right in nav bar in green
@@ -45,9 +44,14 @@
 - Inline tooltips on education terms: NAPLAN, VCE, ATAR, selective entry, ACER, Edutest
 - Final CTA on screen 9 reads "See my matches" (not "Continue")
 
-## Full Quiz — Screen-by-Screen Design
+## Screen 1 — Entry Mode
 
-- **Screen 1 — Address:** Google Places autocomplete, inline privacy note "Used only to check zone eligibility — not stored or shared", suburb/postcode alternative available. Broad mode leads to 3-screen quick quiz; zone results marked approximate
+- **Precise mode:** Full address input with Google Places autocomplete. Green privacy note: "Used only to check zone eligibility — not stored or shared". Zone results on results page show confirmed green/amber zone badge
+- **Broad mode:** Suburb or postcode input. Amber warning note: "Without a full address, zone eligibility results will be approximate. You can enter your address at any time for precise zone checking". Secondary button always visible: "Enter my full address for precise zone checking". Zone results on results page show approximate zone badge with link to verify via findmyschool.vic.gov.au
+
+## Screens 2–9 — Quiz Flow (identical for both entry modes)
+
+- **Screen 1 — Address:** See entry mode section above
 - **Screen 2 — Children:** Year level and target start year per child. Dynamic pricing pill updates live as children are added (green background #E1F5EE, text #085041): 1 child $29 / 2 children $39 / 3+ children $49 (labelled "Family Report")
 - **Screen 3 — School type:** government / Catholic / independent / no preference
 - **Screen 4 — Selective entry:** yes / not sure / no, with inline tooltip explaining selective entry
@@ -86,7 +90,6 @@
 - 7-day money back guarantee shown on checkout page
 
 # Screens Still to Wireframe
-- Quick quiz (3-screen, broad/suburb mode)
 - Results page
 - School detail page (3 variants)
 - Compare mode
