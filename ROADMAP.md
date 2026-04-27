@@ -47,6 +47,7 @@
 - [x] Wireframe school detail pages — all 3 variants finalised (government / private / selective), see DESIGN.md
 - [x] Wireframe compare mode — finalised, see DESIGN.md
 - [x] Wireframe report purchase + delivery confirmation — finalised, see DESIGN.md
+- [x] Quiz screen 2 updated — transition planning toggle added for Years 4–6, all 9 screens now locked
 - [ ] NOTE: map view tap interaction needs real device testing before build
 - [ ] Test quiz flow with 2-3 real parents before building
 

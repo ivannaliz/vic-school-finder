@@ -52,7 +52,7 @@
 ## Screens 2–9 — Quiz Flow (identical for both entry modes)
 
 - **Screen 1 — Address:** See entry mode section above
-- **Screen 2 — Children:** Year level and target start year per child. Dynamic pricing pill updates live as children are added (green background #E1F5EE, text #085041): 1 child $29 / 2 children $39 / 3+ children $49 (labelled "Family Report")
+- **Screen 2 — Children:** Year level and target start year per child. Dynamic pricing pill updates live as children are added (green background #E1F5EE, text #085041): 1 child $29 / 2 children $39 / 3+ children $49 (labelled "Family Report"). Transition planning toggle: appears only for children in Year 4, Year 5, or Year 6. Toggle style: blue background (#E6F1FB), blue text (#0C447C), blue toggle switch (#378ADD). Label: "Also planning ahead for secondary school?" Note below: "We will include secondary school options in your results so you can start planning early." Toggle hidden entirely for Year 7 and above — not shown, not collapsed. Example: Child 2 in Year 9 shows no toggle. This is the final update to the quiz flow — all 9 screens now locked
 - **Screen 3 — School type:** government / Catholic / independent / no preference
 - **Screen 4 — Selective entry:** yes / not sure / no, with inline tooltip explaining selective entry
 - **Screen 5a — Priorities:** Tap to select from academics, wellbeing, culture, enrichment, support. Auto-assigns rank number as parent taps in order; no drag required unless reordering

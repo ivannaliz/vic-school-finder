@@ -32,7 +32,7 @@
   - Precise mode: parent enters full address, Google Places autocomplete, inline privacy note "Used only to check zone eligibility — not stored or shared", street-level zone matching, confirmed zone results
   - Broad mode: parent enters suburb or postcode, amber warning note shown, zone results marked as approximate throughout, secondary option to switch to full address always visible
 - Screen 1: Address entry — precise mode (full address) or broad mode (suburb/postcode). See entry mode details above
-- Screen 2: Children entry — year level and target start year per child. Dynamic pricing pill updates live as children are added: 1 child $29 / 2 children $39 / 3+ children $49 (shown as "Family Report")
+- Screen 2: Children entry — year level and target start year per child. Dynamic pricing pill updates live as children are added: 1 child $29 / 2 children $39 / 3+ children $49 (shown as "Family Report"). Transition planning toggle appears for children in Years 4–6 only: "Also planning ahead for secondary school?" — when on, secondary school options are included in results alongside primary. Note shown: "We will include secondary school options in your results so you can start planning early." Toggle hidden entirely for Year 7 and above. Edge case: parents with a primary-age child planning ahead for secondary are captured via this toggle, not a separate question
 - Screen 3: School type preference — government / Catholic / independent / no preference
 - Screen 4: Selective entry consideration — yes / not sure / no, with inline tooltip explaining selective entry
 - Screen 5a: Top level priorities — tap to select from: academics, wellbeing, culture, enrichment, support. Auto-ranks in order tapped
